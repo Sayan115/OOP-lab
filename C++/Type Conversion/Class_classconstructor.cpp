@@ -53,7 +53,7 @@ public:
 int main()
 {
     A ob1;
-    B obj(7, 2);
+    B obj(10, 15);
     ob1 = obj;
     ob1.show();
 }
