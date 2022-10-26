@@ -32,6 +32,11 @@ public:
         temp.second = s;
         return temp;
     }
+    void in()
+    {
+        cout << "Enter:";
+        cin >> second;
+    }
     void display()
     {
         cout << second << " second " << endl;
@@ -40,9 +45,12 @@ public:
 
 int main()
 {
-    t a(5), b(6);
+    t a, b;
+    a.in();
+    b.in();
     t c = a + b;
-    t d = 7;
+    t d;
+    d.in();
     a.display();
     b.display();
     c.display();

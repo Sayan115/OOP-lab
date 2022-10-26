@@ -15,7 +15,7 @@ public:
     str operator+(str t)
     {
         str temp;
-        (temp.s) = s + t.s;
+        temp.s = s + t.s;
         return temp;
     }
     void display()
@@ -26,7 +26,7 @@ public:
 
 int main()
 {
-    str s("Tree "), t("Fruit");
+    str s("Tree"), t("Fruit");
     str c = s + t;
     s.display();
     t.display();
