@@ -1,34 +1,5 @@
 #include <iostream>
 using namespace std;
-
-class A
-{
-    int a, b;
-
-public:
-    A()
-    {
-        a = 0;
-        b = 0;
-    }
-    A(int k, int j)
-    {
-        a = k;
-        b = j;
-    }
-    int ai(int t1)
-    {
-        a = t1;
-    }
-    int bi(int t2)
-    {
-        b = t2;
-    }
-    void show()
-    {
-        cout << a << b;
-    }
-};
 class B
 {
     int m, n;
@@ -58,9 +29,31 @@ public:
     }
 };
 
+class A
+{
+    int a, b;
+
+public:
+    A()
+    {
+        a = 0;
+        b = 0;
+    }
+    A(B obj)
+    {
+        a = obj.mi();
+        b = obj.ni();
+    }
+    void show()
+    {
+        cout << a << b;
+    }
+};
+
 int main()
 {
+    A ob1;
     B obj(7, 2);
-    A ob1(obj.mi, obj.ni);
+    ob1 = obj;
     ob1.show();
 }
