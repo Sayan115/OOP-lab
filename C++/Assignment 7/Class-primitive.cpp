@@ -17,7 +17,7 @@ public:
     }
     void show()
     {
-        cout << a << b;
+        cout << a << "+i" << b;
     }
     operator int()
     {
